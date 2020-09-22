@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>counter</title>
-    <link rel="stylesheet" href="demo.css">
+    <link rel="stylesheet" href="./counter.css">
 </head>
 <body>
     
-    <div id="con">
+    <div id="header">
         <div class="inner" id='txt'>
-            <h1>Enter value from 1 to 9</h1>
+            <h1>Enter a nomber from 1 to 99999</h1>
         </div>
         <div class="inner" id="input_con">
             <div>
-                <input type="number" placeholder="Enter Number" required >
+                <input type="number" id="number" placeholder="Enter Number" >
             </div>
             <div>
-                <button type="submit">
+                <button type="submit" onclick="StartCounter()">
                     Start Counter
                 </button>
             </div>
@@ -25,11 +25,28 @@
     </div>
 
     <div id="counter-container">
-        <div id='counter-div'>
-
+        <div class='counter-div'>
+            <p class="current">0</p>
+            <p class="next">1</p>
+        </div>
+        <div class='counter-div'>
+            <p class="current">0</p>
+            <p class="next">1</p>
+        </div>
+        <div class='counter-div'>
+            <p class="current">0</p>
+            <p class="next">1</p>
+        </div>
+        <div class='counter-div'>
+            <p class="current">0</p>
+            <p class="next">1</p>
+        </div>
+        <div class='counter-div'>
+            <p class="current">0</p>
+            <p class="next">1</p>
         </div>
     </div>
 
-    <script src="demo.js"></script>
+    <script src="./counter.js"></script>
 </body>
 </html>
